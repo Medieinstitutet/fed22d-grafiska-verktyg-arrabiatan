@@ -1,0 +1,3 @@
+## på g
+    skapa (t.ex. en README.md i assets-mappen) till den kodande gruppen. Om t.ex. en knapp har ett hover-state eller något är tänkt att animeras, kan ni nämna det här. 💡 Tips är att föra logg under designprocessen i denna fil. Har ni gjort designen så att det går att dela en länk till den, lägg gärna länken här.
+    https://www.figma.com/file/EewhrrTDAP1hFtvfCgcdzK/Untitled?node-id=0%3A1&t=seCEgNwM96wwB1r2-0
