@@ -15,3 +15,4 @@
 - [@existenztim](https://www.github.com/existenztim)
 - [@emiliamassing](https://github.com/emiliamassing)
 - [@evelinanorlin](https://github.com/evelinanorlin)
+- [@Sofilus](https://github.com/Sofilus)
