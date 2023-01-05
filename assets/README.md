@@ -24,8 +24,12 @@
 
 ## Övrigt
     citaten under kortelementet behöver endast finnas med i desktop versionen. 
-    i darkmode ska bagrundsfärgen vara #434343.
+
+    I darkmode ska bagrundsfärgen vara #434343.
+
     Max width på innehållet i desktop är 1260px.
+
+    Vid behov kan vi skicka en inbjudan i figma där ni kan granska layouten om inte skärmdumparna räcker till.
 
 ## länk till komponenter
     https://www.figma.com/file/EewhrrTDAP1hFtvfCgcdzK/Untitled?node-id=0%3A1&t=pyqLY5ZBilyQnBJW-0
