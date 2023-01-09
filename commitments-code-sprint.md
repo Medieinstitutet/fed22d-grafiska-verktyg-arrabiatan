@@ -39,3 +39,4 @@ Vite, eslint, prettier.
  Cecilia @CeciliaL1
  Simon @KennedyB1
  Jenny @Jenny-Svensson
+ Alen @alengusinac
