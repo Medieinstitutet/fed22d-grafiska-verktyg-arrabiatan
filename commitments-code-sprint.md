@@ -37,6 +37,9 @@ Vite, eslint, prettier.
 
 ## Underskrivet av
  Cecilia @CeciliaL1
+ 
  Simon @KennedyB1
+ 
  Jenny @Jenny-Svensson
+ 
  Alen @alengusinac
