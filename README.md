@@ -5,3 +5,6 @@ Temat i detta projekt är resor med inspiration av Sällskapsresan. Sällskapsre
 Logotypen är inspirerad av Sun-Trips logotyp, starka färger som ska påminna om sol.
 
 Vi har valt att använda oss av glada och starka färger för att förstärka känslan av "glad-charter-resenär". Det ska väckas ett sug efter paraplydrinkar, salta bad och bussresa med reseledare! 
+
+
+HEJ
