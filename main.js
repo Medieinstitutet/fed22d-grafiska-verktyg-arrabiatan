@@ -21,17 +21,17 @@ let checkState = true;
  **********************************************************************************/
 
 function hamburgerMenu(){
-    if(checkState){// animation on the hamburgerbtn in progress. only functioning on one click so far
-        console.log(checkState, 'första')
+    if(checkState){
         gsap.to(spanHamTwo, { backgroundColor: 'transparent',border: 'none', duration: 2 });
         gsap.to(spanHamOne, { y: 10, rotate: 50, duration: 1});
         gsap.to(spanHamThree, {y: -20, rotate: -50, duration: 1});
         checkState = false;
-        console.log(checkState, 'första')
     }else if (checkState === false){
-    console.log('hamburagre');
+        gsap.to(spanHamTwo, { backgroundColor: '#F59C30',border: '1px solid black', duration: 2 });
+        gsap.to(spanHamOne, { y: 0, rotate: 0, duration: 1});
+        gsap.to(spanHamThree, {y: 0, rotate: 0, duration: 1});
     checkState = true;
-    console.log(checkState, 'andra')
+
     }
 }
 
