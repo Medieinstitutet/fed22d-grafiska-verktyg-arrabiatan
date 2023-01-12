@@ -12,6 +12,28 @@ $warning-red: #F24100;
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inconsolata', monospace;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2.375rem;
+}
+
+h3, h4, h5, h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  line-height: 25px;
+}
+
 /********************************HEADER****************************/
 
 header{
