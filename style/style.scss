@@ -7,6 +7,7 @@ $warning-red: #F24100;
 /********************************GLOBAL**********************************/
 
 body {
+  position: relative;
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
 }
@@ -97,9 +98,12 @@ header {
   .stig-helmer-img {
     position: relative;
     right: -150px;
-    bottom: 75px;
+    bottom: 100px;
+    height: 40rem;
+    margin-top: -180px;
   }
 }
+
 
 /**************************FLAMINGO**********************************/
 
@@ -168,4 +172,58 @@ header {
 
 form {
   text-align: center;
+
+/********************************FOOTER****************************/
+
+footer {
+  text-align: center;
+  background-color: #FFFFFF;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  padding-top: 10px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 103px;
+  height: 103px;
+  margin: 15px;
+}
+
+.socialmedia-icons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 2rem 2rem 0;
+  color: #F59C30;
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 1px;
+}
+
+
+.socialmedia-icons li{
+  margin: 0 10px;
+}
+
+.copyright-text {
+  font-size: 1rem;
+  font-family: 'Inconsolata', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.07em;
+  text-align: center;
+  margin: 0 0 2rem 0;
 }
