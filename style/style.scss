@@ -51,12 +51,14 @@ header{
       height: 100px;
       margin: 15px;
       margin-left: 0px;
+      margin-bottom: 5;
     }
 
 
     button{
       position: fixed;
       top: 50px;
+      z-index: 2;
       background-color: transparent;
       outline: none;
       border: none;
@@ -80,7 +82,43 @@ header{
       }
     }
   }
+  
 
+  .ham-btn-menu{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    width: 100vw;
+    height: 100vh;
+
+    ul{
+      text-align: center;
+      position: relative;
+      top: 150px;
+    }
+    li{
+      list-style: none;
+      margin-bottom: 40px;
+      
+    }
+
+    a{
+      color: #000;
+      font-family: Inconsolata, monospace;
+      font-size: 2.75rem;
+      text-decoration: none;
+     
+      &:hover{
+        text-decoration: underline;
+        font-weight: 600;
+      }
+      &:active{
+        text-decoration: underline;
+        font-weight: 600;
+      }
+    }
+  }
     /**********************************************************************/
 
 /**************************FIRST-SECTION**********************************/
