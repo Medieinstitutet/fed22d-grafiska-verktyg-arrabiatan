@@ -47,7 +47,10 @@ header{
 /**************************FIRST-SECTION**********************************/
 
 .first-section {
+  position: relative;
+  max-width: 430px;
   padding: 0 50px;
+  margin: 0 auto;
 
   p {
     &:first-of-type {
