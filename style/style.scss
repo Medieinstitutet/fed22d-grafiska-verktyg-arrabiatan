@@ -6,6 +6,34 @@ $warning-red: #F24100;
 
 /********************************GLOBAL**********************************/
 
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 2.375rem;
+}
+
+h3, h4, h5, h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 25px;
+}
 
 /********************************HEADER****************************/
 
@@ -18,4 +46,49 @@ header{
 }
 }
 
-/**********************************************************************/
+/**************************FIRST-SECTION**********************************/
+
+.first-section {
+  position: relative;
+  max-width: 430px;
+  padding: 0 50px;
+  margin: 0 auto;
+
+  p {
+    &:first-of-type {
+      font-weight: 500;
+    }
+  }
+
+  a {
+    max-width: 250px;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $primary_orange;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+
+      img {
+        right: -20px;
+      }
+    }
+
+    img {
+      position: relative;
+      top: 5px;
+      right: 0;
+      width: 30px;
+      filter: invert(82%) sepia(27%) saturate(5732%) hue-rotate(337deg) brightness(100%) contrast(93%);
+      transition: right 0.3s ease-in-out;
+    }
+  }
+
+  .stig-helmer-img {
+    position: relative;
+    right: -150px;
+    bottom: 75px;
+  }
+}
