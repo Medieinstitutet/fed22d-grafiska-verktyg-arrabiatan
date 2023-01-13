@@ -6,8 +6,13 @@ $warning-red: #F24100;
 
 /********************************GLOBAL**********************************/
 
+body {
+  overflow-x: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inconsolata', monospace;
+  font-weight: 400;
 }
 
 h1 {
@@ -39,4 +44,28 @@ header{
 }
 }
 
-/**********************************************************************/
+/**************************FIRST-SECTION**********************************/
+
+.first-section {
+  padding: 0 50px;
+
+  p {
+    &:first-of-type {
+      font-weight: 500;
+    }
+  }
+
+  a {
+    max-width: 250px;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $primary_orange;
+  }
+
+  img {
+    position: absolute;
+    right: -75px;
+    bottom: -275px;
+  }
+}
