@@ -118,6 +118,21 @@ header{
         font-weight: 600;
       }
     }
+    button{
+      width: 200px;
+      height: 55px;
+      background-color: $primary_orange;
+      color: black;
+      font-family: Inconsolata, monospace;
+      font-size: 20px;
+      letter-spacing: 7%;
+      border-radius: 50px;
+      border: 2px solid black;
+      font-size: 2rem;
+      cursor: pointer;
+      
+
+    }
   }
     /**********************************************************************/
 
