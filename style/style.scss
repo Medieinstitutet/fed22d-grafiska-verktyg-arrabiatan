@@ -61,9 +61,16 @@ header{
     font-size: 1.5rem;
     font-weight: 700;
     color: $primary_orange;
+
+    img {
+      position: relative;
+      top: 5px;
+      width: 30px;
+      filter: invert(82%) sepia(27%) saturate(5732%) hue-rotate(337deg) brightness(100%) contrast(93%);
+    }
   }
 
-  img {
+  .stig-helmer-img {
     position: absolute;
     right: -75px;
     bottom: -275px;
