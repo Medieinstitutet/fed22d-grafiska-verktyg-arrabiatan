@@ -1,0 +1,62 @@
+body{
+    margin: auto;
+    width: 1260px;
+
+}
+header{ 
+      .svg-logo{
+        margin-top:30px;
+        margin-left: 100px;
+        width: 187px;
+        height: 187px;
+      }
+
+    button{
+        visibility: hidden;
+    }
+
+}
+.ham-btn-menu{
+    position: absolute;
+    top: 0;
+    ul{
+        margin-top: 93px;
+        margin-left: 300px;
+
+    }
+    li{
+        display: inline;   
+    }
+
+    a{
+      color: #000;
+      font-family: Inconsolata, monospace;
+      font-size: 1.5rem;
+      text-decoration: none;
+      margin-left: 25px;
+     
+      &:hover{
+        text-decoration: underline;
+        font-weight: 600;
+      }
+      &:active{
+        text-decoration: underline;
+        font-weight: 600;
+      }
+      
+    }
+    button{
+      width: 200px;
+      height: 45px;
+      background-color: #F59C30;
+      color: black;
+      font-family: Inconsolata, monospace;
+      font-size: 20px;
+      letter-spacing: 7%;
+      border-radius: 50px;
+      border: 2px solid black;
+      font-size: 2rem;
+      cursor: pointer;
+      margin-left: 60px;
+    }
+  }
