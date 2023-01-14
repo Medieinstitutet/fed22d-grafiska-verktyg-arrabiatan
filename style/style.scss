@@ -100,11 +100,63 @@ header {
     position: relative;
     right: -150px;
     bottom: 100px;
-    height: 40rem;
-    margin-top: -180px;
   }
 }
 
+/**************************FIRST-SECTION**********************************/
+
+.second-section {
+  position: relative;
+  max-width: 430px;
+  height: 700px;
+  margin: 0 auto;
+
+  h2, p {
+    padding: 0 50px;
+  }
+
+  .card-carousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    i {
+      font-size: 5rem;
+    }
+
+    .card-container {
+      width: 243px;
+      height: 360px;
+      outline: 1px solid black;
+      border-radius: 20px;
+      background-color: $primary_orange;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      h3 {
+        height: 60px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+      }
+  
+      img {
+        width: 243px;
+        height: 243px;
+        outline: 1px solid black;
+      }
+  
+      a {
+        display: block;
+        height: 60px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
 
 /**************************FLAMINGO**********************************/
 
