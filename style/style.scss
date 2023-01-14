@@ -85,12 +85,15 @@ header{
   
 
   .ham-btn-menu{
+    visibility: hidden;
     z-index: 1;
-    position: absolute;
+    position: fixed;
     top: 0;
     background-color: rgba($color: #fff, $alpha: 0.8);
     width: 100vw;
     height: 100vh;
+    
+  
 
     ul{
       text-align: center;
@@ -131,9 +134,10 @@ header{
       border: 2px solid black;
       font-size: 2rem;
       cursor: pointer;
-      
-
     }
+  }
+  div.menu-open{
+    visibility: visible;
   }
     /**********************************************************************/
 
