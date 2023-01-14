@@ -15,7 +15,8 @@ const spanHamOne = document.querySelector('#hamSpanOne');
 const spanHamTwo = document.querySelector('#hamSpanTwo');
 const spanHamThree = document.querySelector('#hamSpanThree');
 const menu = document.querySelector('#hamMenu');
-const menuOpen = document.querySelector('.menu-open');
+const menuOpen = document.querySelector('.ham-btn-menu');
+console.log(menuOpen)
 
 let checkState = true;
 
@@ -30,7 +31,8 @@ function hamburgerMenu(){
         gsap.to(spanHamThree, {y: -20, rotate: -50, duration: 1});
         checkState = false;
         menu.classList.add('menu-open');
-        gsap.to(menuOpen, {y: 500, duration: 5 })
+        gsap.fromTo(menuOpen, {y: -500, duration: 3}, {y: 0, duration: 3})
+           
     }else if (checkState === false){
         gsap.to(spanHamTwo, { backgroundColor: '#F59C30',border: '1px solid black', duration: 2 });
         gsap.to(spanHamOne, { y: 0, rotate: 0, duration: 1});
