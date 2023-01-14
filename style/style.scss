@@ -1,8 +1,6 @@
 
-
-@media screen and (min-width: 1440){
   @import 'desktop';
-}
+
 @media screen and (min-width: 830){
   @import 'tablet';
 }
@@ -73,6 +71,7 @@ header{
     }
 
     button{
+      visibility: visible;
       position: fixed;
       top: 50px;
       z-index: 2;
@@ -149,6 +148,12 @@ header{
       border: 2px solid black;
       font-size: 2rem;
       cursor: pointer;
+      &:hover{
+        background-color: $secondary-teal;
+      }
+      &::after{
+        background-color: #018B82;
+      }
 
     }
   }
