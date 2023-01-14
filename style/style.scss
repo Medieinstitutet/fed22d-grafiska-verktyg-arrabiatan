@@ -58,13 +58,14 @@ p {
 /********************************HEADER****************************/
 header{
   display: flex;
-  justify-content: space-around;
-  margin-right: 45px;
-    .svg-logo{
+  justify-content: space-between;
+  margin-right: 80px;
+  
+    img{
       width: 150px;
       height: 100px;
       margin: 15px;
-      margin-left: 0px;
+      margin-left: 15px;
       margin-bottom: 5;
     }
 
@@ -77,6 +78,7 @@ header{
       outline: none;
       border: none;
       cursor: pointer;
+      
 
 
       span{
