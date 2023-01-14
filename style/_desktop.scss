@@ -22,13 +22,15 @@ div.ham-btn-menu{
   position: absolute;
   top: 0;
   background-color: transparent;
+  width: 100%;
+  height: 0px;
   
   ul{
     position: absolute;
     top: 0;
     padding: 0;
     margin-left: 426px;
-    margin-top: 40px;
+    margin-top: 60px;
   }
   li{
     display: inline;
