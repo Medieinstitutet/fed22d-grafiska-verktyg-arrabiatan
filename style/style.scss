@@ -125,7 +125,11 @@ header {
       font-size: 5rem;
     }
 
+    .all-cards-container {
+      position: relative;
+
     .card-container {
+        position: relative;
       width: 243px;
       height: 360px;
       outline: 1px solid black;
