@@ -1,4 +1,3 @@
-import './style/normalize.scss';
 import './style/style.scss';
 import { gsap } from 'gsap';
 
