@@ -19,6 +19,12 @@ let checkState = true;
  **************************************FUNCTIONS************************************
  **********************************************************************************/
 
+ /**
+  * Function to open-close hemburger btn
+  * animation on hamburger to X.
+  * animation to slide the open-menu in.
+  * And reverse
+  */
 function hamburgerMenu(){
     if(checkState){
         gsap.to(spanHamTwo, { backgroundColor: 'transparent',border: 'none', duration: 2 });
