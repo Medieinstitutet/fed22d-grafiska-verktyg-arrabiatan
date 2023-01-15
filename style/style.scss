@@ -121,44 +121,49 @@ header {
     align-items: center;
     justify-content: space-around;
 
-    i {
-      font-size: 5rem;
+    button {
+      border: none;
+      background-color: transparent;
+
+      i {
+        font-size: 5rem;
+      }
     }
 
     .all-cards-container {
       position: relative;
 
-    .card-container {
+      .card-container {
         position: relative;
-      width: 243px;
-      height: 360px;
-      outline: 1px solid black;
-      border-radius: 20px;
-      background-color: $primary_orange;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  
-      h3 {
-        height: 60px;
-        margin: 0;
-        display: flex;
-        align-items: center;
-      }
-  
-      img {
         width: 243px;
-        height: 243px;
+        height: 360px;
         outline: 1px solid black;
-      }
-  
-      a {
-        display: block;
-        height: 60px;
+        border-radius: 20px;
+        background-color: $primary_orange;
         display: flex;
+        flex-direction: column;
         align-items: center;
+    
+        h3 {
+          height: 60px;
+          margin: 0;
+          display: flex;
+          align-items: center;
+        }
+    
+        img {
+          width: 243px;
+          height: 243px;
+          outline: 1px solid black;
+        }
+    
+        a {
+          display: block;
+          height: 60px;
+          display: flex;
+          align-items: center;
+        }
       }
-    }
   
       #card2,
         #card3,
