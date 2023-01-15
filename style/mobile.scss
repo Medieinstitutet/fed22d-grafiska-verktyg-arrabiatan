@@ -203,7 +203,7 @@ header{
 /**************************FLAMINGO**********************************/
 
 .flamingoSection {
-  max-height: 60vh;
+  max-height: 70vh;
   background-image: url("assets/images/flamingo.svg"), url("assets/images/blue_wave.png");
   background-repeat: no-repeat;
   background-size: 100% auto, 110% auto;
@@ -218,6 +218,7 @@ header{
 
 .flamingo {
   padding-top: 10vh;
+  
 }
 
 .flamingoInput {
@@ -275,10 +276,11 @@ footer {
   text-align: center;
   background-color: #FFFFFF;
   width: 100vw;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
+  top: 0;
   height: auto;
   padding-top: 10px;
 }
