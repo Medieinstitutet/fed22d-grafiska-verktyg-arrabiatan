@@ -1,52 +1,74 @@
 @media only screen and (min-width: 992px) {
 
-    body{
-        margin: auto;
-        width: 1260px;
+  body {
+    margin: auto;
+    width: 1260px;
+  }
+
+  /********************************HEADER****************************/
+
+  header {
+    .svg-logo {
+      width: 187px;
+      height: 187px;
     }
-    
-    /********************************HEADER****************************/
-    
-    header{ 
-      .svg-logo{
-        width: 187px;
-        height: 187px;
+
+    button {
+      display: none;
     }
-    
-      button{
-        display: none;
-      }
-    }
-    
-    div.ham-btn-menu{
-      visibility: visible;
+  }
+
+  div.ham-btn-menu {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 0px;
+
+    ul {
       position: absolute;
       top: 0;
-      background-color: transparent;
-      width: 100%;
-      height: 0px;
-      
-      ul{
-        position: absolute;
-        top: 0;
-        padding: 0;
-        margin-left: 290px;
-        margin-top: 60px;
-      }
-      li{
-        display: inline;
-        margin-left: 50px;
-        button{
-          height: 45px;
-        }
-      }
-      a{
-        font-size: 1.5em;
-      }
-      button{
-        height: 34px;
-        margin-left: 70px;
-      
+      padding: 0;
+      margin-left: 290px;
+      margin-top: 60px;
+    }
+
+    li {
+      display: inline;
+      margin-left: 50px;
+
+      button {
+        height: 45px;
       }
     }
- }
+
+    a {
+      font-size: 1.5em;
+    }
+
+    button {
+      height: 34px;
+      margin-left: 70px;
+
+    }
+  }
+
+  /***********************FLAMINGO*******************************/
+
+  .flamingoSection {
+    height: 100vh;
+  }
+
+  .flamingo {
+    padding-top: 30vh;
+  }
+
+  .flamingoInput {
+    width: 292px;
+    height: 45px;
+    margin-bottom: 40px;
+  }
+
+  /******************************************************************/
+}
