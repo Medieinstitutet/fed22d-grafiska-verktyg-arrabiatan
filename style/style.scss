@@ -173,13 +173,13 @@ header {
       }
   
       #card2,
-        #card3,
-        #card4 {
-          position: absolute;
-          top: 0;
-          z-index: -1;
-          visibility: hidden;
-        }
+      #card3,
+      #card4 {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        visibility: hidden;
+      }
     } 
   }
 }
