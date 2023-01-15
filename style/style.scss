@@ -126,6 +126,7 @@ header {
       border: none;
       background-color: transparent;
       padding: 0;
+      cursor: pointer;
 
       i {
         font-size: 5rem;
@@ -162,6 +163,7 @@ header {
         }
     
         a {
+          position: relative;
           display: block;
           height: 60px;
           display: flex;
@@ -169,6 +171,22 @@ header {
           text-decoration: none;
           color: black;
           font-size: 1.8rem;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 10px;
+            width: 29px;
+            height: 1.5px;
+            background-color: #000000;
+            transition: width 0.3s ease-in-out;
+          }
+
+          &:hover{
+            &::after {
+              width: 100px;
+            }
+          }
         }
       }
   
