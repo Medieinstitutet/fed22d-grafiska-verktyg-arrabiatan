@@ -148,6 +148,7 @@ header {
         h3 {
           height: 60px;
           margin: 0;
+          font-size: 2rem;
           display: flex;
           align-items: center;
         }
@@ -163,6 +164,9 @@ header {
           height: 60px;
           display: flex;
           align-items: center;
+          text-decoration: none;
+          color: black;
+          font-size: 1.8rem;
         }
       }
   
