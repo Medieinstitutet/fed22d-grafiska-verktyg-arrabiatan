@@ -163,6 +163,7 @@ div.menu-open {
 .first-section {
   position: relative;
   max-width: 430px;
+  height: 700px;
   padding: 0 50px;
   margin: 0 auto;
 
@@ -202,8 +203,105 @@ div.menu-open {
     position: relative;
     right: -150px;
     bottom: 100px;
-    height: 40rem;
-    margin-top: -180px;
+  }
+}
+
+/**************************SECOND-SECTION**********************************/
+
+.second-section {
+  position: relative;
+  max-width: 430px;
+  height: 700px;
+  margin: 0 auto;
+
+  h2, p {
+    padding: 0 50px;
+  }
+
+  .card-carousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+
+    button {
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      cursor: pointer;
+
+      i {
+        font-size: 5rem;
+      }
+    }
+
+    .all-cards-container {
+      position: relative;
+
+      .card-container {
+        position: relative;
+        width: 243px;
+        height: 360px;
+        outline: 1px solid black;
+        border-radius: 20px;
+        background-color: $primary_orange;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 5px 16px 3px;
+    
+        h3 {
+          height: 60px;
+          margin: 0;  
+          font-size: 2rem;
+          display: flex;
+          align-items: center;
+        }
+    
+        img {
+          width: 243px;
+          height: 243px;
+          outline: 1px solid black;
+        }
+    
+        a {
+          position: relative;
+          display: block;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: black;
+          font-size: 1.8rem;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 10px;
+            width: 29px;
+            height: 1.5px;
+            background-color: #000000;
+            transition: width 0.3s ease-in-out;
+          }
+
+          &:hover{
+            &::after {
+              width: 100px;
+            }
+          }
+        }
+      }
+  
+      #card2,
+      #card3,
+      #card4 {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        visibility: hidden;
+      }
+    } 
   }
 }
 
@@ -211,6 +309,7 @@ div.menu-open {
 /**************************FLAMINGO**********************************/
 
 .flamingoSection {
+
   height: 60vh;
   background-image: url("../assets/images/flamingo.svg"), url("../assets/images/blue_wave.png");
   background-repeat: no-repeat;
@@ -226,6 +325,7 @@ div.menu-open {
 
 .flamingo {
   padding-top: 10vh;
+  
 }
 
 .flamingoInput {
@@ -283,9 +383,13 @@ footer {
   text-align: center;
   background-color: #FFFFFF;
   width: 100vw;
+
+  position: relative;
+
   bottom: 0;
   left: 0;
   right: 0;
+  top: 0;
   height: auto;
   padding-top: 10px;
 }
