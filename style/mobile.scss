@@ -237,24 +237,30 @@ footer {
   bottom: 0;
 
   p{
-    margin-left: 50px;
+    font-family: 'Roboto', 'sans serif';
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-weight: 300;
+    margin-left: 28px;
     margin-right: 128px;
+    text-align: center;
   }
   
   button {
-    width: 200px;
-    height: 55px;
+    width: 265px;
+    height: 50px;
     background-color: $primary_orange;
     color: black;
-    font-family: Inconsolata, monospace;
+    font-family: 'Inconsolata', Arial, Helvetica, sans-serif;
     font-size: 20px;
     letter-spacing: 7%;
     border-radius: 50px;
     border: 2px solid black;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     cursor: pointer;
-    margin-left: 90px;
-    margin-bottom: 15px;
+    margin-left: 65px;
+    margin-bottom: 30px;
 
     &:hover {
       background-color: $secondary-teal;
