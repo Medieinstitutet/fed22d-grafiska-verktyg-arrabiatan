@@ -48,6 +48,9 @@ function hamburgerMenu() {
     }
 }
 
+/**
+ * Function to close cookie disclamer when accepted
+ */
 function cookieDisclamer(){
     disclamerContainer.classList.add('accepted-cookies');
 
