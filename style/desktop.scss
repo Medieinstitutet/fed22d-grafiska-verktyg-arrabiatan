@@ -1,9 +1,9 @@
 @media only screen and (min-width: 992px) {
-
   body {
     margin: auto;
     width: 1260px;
   }
+
 
   /********************************HEADER****************************/
 
@@ -33,24 +33,19 @@
       margin-left: 290px;
       margin-top: 60px;
     }
-
     li {
       display: inline;
       margin-left: 50px;
-
       button {
         height: 45px;
       }
     }
-
     a {
       font-size: 1.5em;
     }
-
     button {
       height: 34px;
       margin-left: 70px;
-
     }
   }
 
@@ -71,4 +66,39 @@
   }
 
   /******************************************************************/
+=======
+    a {
+      font-size: 1.5em;
+    }
+    button {
+      height: 34px;
+      margin-left: 70px;
+    }
+  }
+
+
+  /********************************FOOTER****************************/
+
+  footer {
+    width: auto;
+}
+
+  .footer-logo {
+    width: 400px;
+    height: 400px;
+}
+
+  .socialmedia-icons {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+  .socialmedia-icons li {
+    margin: 0 10px;
+}
+
+  .copyright-text {
+    font-size: 1.5rem;
+}
+
 }
