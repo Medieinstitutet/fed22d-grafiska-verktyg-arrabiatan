@@ -15,6 +15,11 @@ const menu = document.querySelector('#hamMenu');
 
 let checkState = true;
 
+
+/******************************COOKIE DISCLAMER***********************************/
+const acceptBtn = document.querySelector('#accept-btn');
+const disclamerContainer = document.querySelector('#cookie-disclamer');
+
 /**********************************************************************************
 **************************************FUNCTIONS************************************
 **********************************************************************************/
@@ -40,8 +45,12 @@ function hamburgerMenu() {
         gsap.to(spanHamThree, { y: 0, rotate: 0, duration: 1 });
         menu.classList.remove('menu-open');
         checkState = true;
-
     }
+}
+
+function cookieDisclamer(){
+    disclamerContainer.classList.add('accepted-cookies');
+
 }
 
 
@@ -51,6 +60,8 @@ function hamburgerMenu() {
 **********************************************************************************/
 
 btnHam.addEventListener('click', hamburgerMenu);
+
+acceptBtn.addEventListener('click', cookieDisclamer);
 
 
 
