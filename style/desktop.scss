@@ -4,6 +4,7 @@
     width: 1260px;
   }
 
+
   /********************************HEADER****************************/
 
   header {
@@ -48,6 +49,33 @@
     }
   }
 
+  /***********************FLAMINGO*******************************/
+
+  .flamingoSection {
+    height: 100vh;
+  }
+
+  .flamingo {
+    padding-top: 30vh;
+  }
+
+  .flamingoInput {
+    width: 292px;
+    height: 45px;
+    margin-bottom: 40px;
+  }
+
+  /******************************************************************/
+=======
+    a {
+      font-size: 1.5em;
+    }
+    button {
+      height: 34px;
+      margin-left: 70px;
+    }
+  }
+
 
   /********************************FOOTER****************************/
 
@@ -72,4 +100,5 @@
   .copyright-text {
     font-size: 1.5rem;
 }
+
 }

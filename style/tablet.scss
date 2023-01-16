@@ -1,16 +1,35 @@
 @media only screen and (min-width: 600px) {
 
-/********************************HEADER****************************/
-.svg-logo{
-    margin-top:30px;
+  /********************************HEADER****************************/
+  .svg-logo {
+    margin-top: 30px;
     margin-left: 30px;
   }
 
-  .btn-ham{
+  .btn-ham {
     margin-right: 150px;
     margin-top: 30px;
   }
 
-/******************************************************************/
+  /******************************************************************/
 
+
+  /***********************FLAMINGO*******************************/
+
+  .flamingoSection {
+    background-size: cover, 110%;
+    background-position: center top, top;
+  }
+
+  .flamingo {
+    padding-top: 15vh;
+  }
+
+  .flamingoInput {
+    width: 292px;
+    height: 45px;
+    margin-bottom: 40px;
+  }
+
+  /******************************************************************/
 }
