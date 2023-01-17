@@ -33,22 +33,53 @@
       margin-left: 290px;
       margin-top: 60px;
     }
+
     li {
       display: inline;
       margin-left: 50px;
+
       button {
         height: 45px;
       }
     }
+
     a {
       font-size: 1.5em;
     }
+
     button {
       height: 34px;
       margin-left: 70px;
     }
   }
 
+  /******************************************************************/
+  /**************************SECOND-SECTION**********************************/
+  .second-section {
+    max-width: 50vw;
+  }
+
+  .second-section h2 {
+    text-align: center;
+  }
+
+  .all-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+
+  }
+
+  .all-cards-container,
+  .card-container:hover {
+    transform: scale(1.1);
+  }
+
+  .card-container {
+    transition: transform 0.5s;
+  }
+
+  /******************************************************************/
   /***********************FLAMINGO*******************************/
 
   .flamingoSection {
@@ -66,39 +97,40 @@
   }
 
   /******************************************************************/
-    a {
-      font-size: 1.5em;
-    }
-    button {
-      height: 34px;
-      margin-left: 70px;
-    }
-  
+  a {
+    font-size: 1.5em;
+  }
+
+  button {
+    height: 34px;
+    margin-left: 70px;
+  }
+
 
 
   /********************************FOOTER****************************/
 
   footer {
     width: auto;
-}
+  }
 
   .footer-logo {
     width: 400px;
     height: 400px;
-}
+  }
 
   .socialmedia-icons {
     font-size: 30px;
     padding-bottom: 50px;
-}
+  }
 
   .socialmedia-icons li {
     margin: 0 10px;
-}
+  }
 
   .copyright-text {
     font-size: 1.5rem;
-}
+  }
 
 
 }

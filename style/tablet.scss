@@ -12,8 +12,51 @@
   }
 
   /******************************************************************/
+  /**************************SECOND-SECTION**********************************/
+  .second-section h2 {
+    text-align: left;
+  }
 
+  .second-section h2,
+  .second-section p {
 
+    padding: 0;
+  }
+
+  .second-section {
+    min-height: 80vh;
+  }
+
+  .all-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1rem;
+
+  }
+
+  .card-container {
+    position: relative;
+    visibility: visible;
+    box-shadow: none;
+  }
+
+  .second-section .card-carousel .all-cards-container #card2,
+  .second-section .card-carousel .all-cards-container #card3,
+  .second-section .card-carousel .all-cards-container #card4 {
+
+    position: relative;
+    visibility: visible;
+  }
+
+  button[aria-label="byter resmål bakåt"] {
+    display: none;
+  }
+
+  button[aria-label="byter resmål framåt"] {
+    display: none;
+  }
+
+  /******************************************************************/
   /***********************FLAMINGO*******************************/
 
   .flamingoSection {
@@ -34,17 +77,19 @@
   /******************************************************************/
 
   /*****************COOKIE-DISCLAMER*****************************/
-.cookie-disclamer{
+  .cookie-disclamer {
     flex-direction: row;
     height: 70px;
-    div:nth-of-type(1){
-        width: 70%;
+
+    div:nth-of-type(1) {
+      width: 70%;
     }
-    div:nth-of-type(2){
-        width: 30%;
+
+    div:nth-of-type(2) {
+      width: 30%;
     }
-  
-    p{
+
+    p {
       font-family: 'Roboto', 'sans serif';
       font-size: 1rem;
       letter-spacing: 1px;
@@ -53,14 +98,15 @@
       margin-right: 0px;
     }
 
-    button{
-        width: 175px;
-        height: 40px;
-        margin-left: 5px;
-        margin-top: 15px;
-        font-size: 1rem;
+    button {
+      width: 175px;
+      height: 40px;
+      margin-left: 5px;
+      margin-top: 15px;
+      font-size: 1rem;
     }
-    }
+  }
+
   /**************************************************************/
 
 
