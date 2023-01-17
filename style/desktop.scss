@@ -49,6 +49,24 @@
     }
   }
 
+  /******************************FIRST-SECTION***************************/
+
+  .first-section {
+    max-width: 1260px;
+    margin-bottom: 100px;
+
+    p {
+      max-width: 40%;
+    }
+
+    .stig-helmer-img {
+      width: 786px;
+      height: 717px;
+      right: -400px;
+      bottom: 330px;
+    }
+  }
+
   /***********************FLAMINGO*******************************/
 
   .flamingoSection {
