@@ -310,7 +310,7 @@ div.menu-open {
 
 .flamingoSection {
 
-  height: 60vh;
+  min-height: 60vh;
   background-image: url("../assets/images/flamingo.svg"), url("../assets/images/blue_wave.png");
   background-repeat: no-repeat;
   background-size: 100% auto, 110% auto;
@@ -434,6 +434,7 @@ footer {
   text-align: center;
   margin: 0 0 2rem 0;
 }
+
 /*****************COOKIE-DISCLAMER*****************************/
 .cookie-disclamer{
   display: flex;
@@ -482,3 +483,4 @@ section.accepted-cookies{
   visibility: hidden;
 }
 /**************************************************************/
+
