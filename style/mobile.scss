@@ -45,110 +45,118 @@ p {
 }
 
 /********************************HEADER****************************/
-header{
+header {
   display: flex;
   justify-content: space-between;
   margin-right: 80px;
 
-    img{
-      width: 150px;
-      height: 100px;
-      margin: 15px;
-      margin-left: 15px;
-      margin-bottom: 5;
-    }
-
-    button{
-      visibility: visible;
-      position: fixed;
-      top: 50px;
-      z-index: 2;
-      background-color: transparent;
-      outline: none;
-      border: none;
-      cursor: pointer;
-
-
-
-      span{
-        display: block;
-        background-color: $primary_orange;
-        width: 48px;
-        height: 6px;
-        margin-right: 10px;
-        border: 1px solid black;
-        border-radius: 6px;
-        &:nth-of-type(2){
-          margin-top: 9px;
-        }
-        &:nth-of-type(3){
-          margin-top: 9px;
-        }
-      }
-    }
+  img {
+    width: 150px;
+    height: 100px;
+    margin: 15px;
+    margin-left: 15px;
+    margin-bottom: 5;
   }
 
-
-  .ham-btn-menu{
-    visibility: hidden;
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    background-color: rgba($color: #fff, $alpha: 0.8);
-    width: 100vw;
-    height: 100vh;
-
-    ul{
-      text-align: center;
-      position: relative;
-      top: 150px;
-      padding: 0;
-    }
-    li{
-      list-style: none;
-      margin-bottom: 40px;
-
-    }
-
-    a{
-      color: #000;
-      font-family: Inconsolata, monospace;
-      font-size: 2.75rem;
-      text-decoration: none;
-
-      &:hover{
-        text-decoration: underline;
-        font-weight: 600;
-      }
-      &:active{
-        text-decoration: underline;
-        font-weight: 600;
-      }
-    }
-    button{
-      width: 200px;
-      height: 55px;
-      background-color: $primary_orange;
-      color: black;
-      font-family: Inconsolata, monospace;
-      font-size: 20px;
-      letter-spacing: 7%;
-      border-radius: 50px;
-      border: 2px solid black;
-      font-size: 2rem;
-      cursor: pointer;
-      &:hover{
-        background-color: $secondary-teal;
-      }
-      &:active{
-        background-color: #018B82;
-      }
-
-    }
-  }
-  div.menu-open{
+  button {
     visibility: visible;
+    position: fixed;
+    top: 50px;
+    z-index: 2;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+
+
+    span {
+      display: block;
+      background-color: $primary_orange;
+      width: 48px;
+      height: 6px;
+      margin-right: 10px;
+      border: 1px solid black;
+      border-radius: 6px;
+
+      &:nth-of-type(2) {
+        margin-top: 9px;
+      }
+
+      &:nth-of-type(3) {
+        margin-top: 9px;
+      }
+    }
   }
+}
+
+
+.ham-btn-menu {
+  visibility: hidden;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  background-color: rgba($color: #fff, $alpha: 0.8);
+  width: 100vw;
+  height: 100vh;
+
+  ul {
+    text-align: center;
+    position: relative;
+    top: 150px;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 40px;
+
+  }
+
+  a {
+    color: #000;
+    font-family: Inconsolata, monospace;
+    font-size: 2.75rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    &:active {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+  }
+
+  button {
+    width: 200px;
+    height: 55px;
+    background-color: $primary_orange;
+    color: black;
+    font-family: Inconsolata, monospace;
+    font-size: 20px;
+    letter-spacing: 7%;
+    border-radius: 50px;
+    border: 2px solid black;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $secondary-teal;
+    }
+
+    &:active {
+      background-color: #018B82;
+    }
+
+  }
+}
+
+div.menu-open {
+  visibility: visible;
+}
 
 /**************************FIRST-SECTION**********************************/
 
@@ -209,100 +217,64 @@ header{
   h2, p {
     padding: 0 50px;
   }
-
+  
   .card-carousel {
-    width: 100%;
-    display: flex;
+    position: absolute;
+    margin: 0 100px;
+    background-color: $primary_orange;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    width: 200px;
     align-items: center;
     justify-content: space-around;
     margin-top: 40px;
+
+    .swiper {
+      width: 200px;
+      height: 350px;
+      border: 1px red;
+    }
+
+    .pictures{
+    width: 200px;
+    height: 243px;
+
+    }
 
     button {
       border: none;
       background-color: transparent;
       padding: 0;
       cursor: pointer;
+  }
 
-      i {
-        font-size: 5rem;
-      }
+    h3 {
+      font-size: 1.6rem;
+      text-align: center;
+      margin: 10px;
     }
 
-    .all-cards-container {
-      position: relative;
+    a {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px;
+      font-family: 'Roboto';
+      font-style: normal;
+      color: #000000;
+      margin: 0 50px;
 
-      .card-container {
-        position: relative;
-        width: 243px;
-        height: 360px;
-        outline: 1px solid black;
-        border-radius: 20px;
-        background-color: $primary_orange;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 0px 5px 16px 3px;
-    
-        h3 {
-          height: 60px;
-          margin: 0;  
-          font-size: 2rem;
-          display: flex;
-          align-items: center;
-        }
-    
-        img {
-          width: 243px;
-          height: 243px;
-          outline: 1px solid black;
-        }
-    
-        a {
-          position: relative;
-          display: block;
-          height: 60px;
-          display: flex;
-          align-items: center;
-          text-decoration: none;
-          color: black;
-          font-size: 1.8rem;
-
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: 10px;
-            width: 29px;
-            height: 1.5px;
-            background-color: #000000;
-            transition: width 0.3s ease-in-out;
-          }
-
-          &:hover{
-            &::after {
-              width: 100px;
-            }
-          }
-        }
-      }
-  
-      #card2,
-      #card3,
-      #card4 {
-        position: absolute;
-        top: 0;
-        z-index: -1;
-        visibility: hidden;
-      }
-    } 
+    }
   }
 }
+
 
 
 /**************************FLAMINGO**********************************/
 
 .flamingoSection {
-  max-height: 60vh;
-  background-image: url("assets/images/flamingo.svg"), url("assets/images/blue_wave.png");
+
+  min-height: 60vh;
+  background-image: url("../assets/images/flamingo.svg"), url("../assets/images/blue_wave.png");
   background-repeat: no-repeat;
   background-size: 100% auto, 110% auto;
   background-position: bottom center, center -1px;
@@ -316,6 +288,7 @@ header{
 
 .flamingo {
   padding-top: 10vh;
+  
 }
 
 .flamingoInput {
@@ -373,10 +346,13 @@ footer {
   text-align: center;
   background-color: #FFFFFF;
   width: 100vw;
-  position: absolute;
+
+  position: relative;
+
   bottom: 0;
   left: 0;
   right: 0;
+  top: 0;
   height: auto;
   padding-top: 10px;
 }
@@ -407,7 +383,7 @@ footer {
 }
 
 
-.socialmedia-icons li{
+.socialmedia-icons li {
   margin: 0 10px;
 }
 
@@ -421,3 +397,53 @@ footer {
   text-align: center;
   margin: 0 0 2rem 0;
 }
+
+/*****************COOKIE-DISCLAMER*****************************/
+.cookie-disclamer{
+  display: flex;
+  flex-direction: column;
+  background-color: #D9D9D9;
+  position: fixed;
+  bottom: 0;
+
+  p{
+    font-family: 'Roboto', 'sans serif';
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-weight: 300;
+    margin-left: 28px;
+    margin-right: 128px;
+    text-align: center;
+  }
+  
+  button {
+    width: 265px;
+    height: 50px;
+    background-color: $primary_orange;
+    color: black;
+    font-family: 'Inconsolata', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 7%;
+    border-radius: 50px;
+    border: 2px solid black;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 65px;
+    margin-bottom: 30px;
+
+    &:hover {
+      background-color: $secondary-teal;
+    }
+
+    &:active {
+      background-color: #018B82;
+    }
+  }
+}
+
+section.accepted-cookies{
+  visibility: hidden;
+}
+/**************************************************************/
+
