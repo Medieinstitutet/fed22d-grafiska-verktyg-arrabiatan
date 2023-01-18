@@ -4,7 +4,7 @@ specifiers:
   eslint: ^8.31.0
   gsap: ^3.11.4
   sass: ^1.57.1
-  swiper: ^8.4.5
+  swiper: ^8.4.6
   vite: ^4.0.0
 
 dependencies:
