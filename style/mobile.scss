@@ -281,6 +281,31 @@ div.menu-open {
   }
 }
 
+.quote-review {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; 
+  margin-left: 2rem;
+  margin-bottom: 5rem;
+  font-size: 32px;
+  } 
+
+  .first-item-icons, .second-item-icons, .third-item-icons {
+    display: inline-block;
+    width: 100px;
+  }
+
+  .first-item-quote, .second-item-quote, .third-item-quote {
+    width: 300px;
+    padding-top: 30px;
+  }
+
+  .fa-quote-left {
+    color: #57B8AA;
+    font-size: 70px;
+  }
 
 
 /**************************FLAMINGO**********************************/
