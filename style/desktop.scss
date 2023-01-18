@@ -1,13 +1,12 @@
 @media only screen and (min-width: 992px) {
-  body {
-    margin: auto;
-    width: 1260px;
-  }
+   
 
 
   /********************************HEADER****************************/
 
   header {
+    
+    
     .svg-logo {
       width: 187px;
       height: 187px;
@@ -66,11 +65,32 @@
       bottom: 330px;
     }
   }
+ /******************************SECOND-SECTION***************************/
+.second-section{
+  max-width: 1260px;
+  margin: auto;
+}
 
+.second-section h2, .second-section p {
+  padding: 0;
+}
+.second-section h2{
+  text-align: center;
+}
+
+/******************************QUOTE-SECTION***************************/
+.quote-review{
+  max-width: 1260px;
+  margin: auto;
+}
   /***********************FLAMINGO*******************************/
+
+
 
   .flamingoSection {
     height: 100vh;
+    background-image: url("/fed22d-grafiska-verktyg-arrabiatan/assets/images/flamingo.svg"), url("/fed22d-grafiska-verktyg-arrabiatan/assets/images/blue_wave.png"), linear-gradient(0deg, rgba(0,183,170,1) 82%, rgba(255,255,255,1) 82%);
+    background-position: unset;
   }
 
   .flamingo {
