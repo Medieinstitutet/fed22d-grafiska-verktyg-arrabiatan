@@ -222,12 +222,27 @@ div.menu-open {
     position: absolute;
     margin: 0 100px;
     background-color: $primary_orange;
-    border: 1px solid #000000;
+    outline: 1px solid #000000;
     border-radius: 20px;
     width: 200px;
     align-items: center;
     justify-content: space-around;
     margin-top: 40px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      --swiper-theme-color: black;
+      --swiper-navigation-size: 75px;
+      font-size: 5rem;
+    }
+
+    .swiper-button-prev {
+      left: -75px;
+    }
+
+    .swiper-button-next {
+      right: -75px;
+    }
 
     .swiper {
       width: 200px;
@@ -236,9 +251,9 @@ div.menu-open {
     }
 
     .pictures{
-    width: 200px;
-    height: 243px;
-
+      width: 200px;
+      height: 243px;
+      outline: 1px solid black;
     }
 
     button {
@@ -262,7 +277,6 @@ div.menu-open {
       font-style: normal;
       color: #000000;
       margin: 0 50px;
-
     }
   }
 }
