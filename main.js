@@ -144,12 +144,27 @@ function activateSubmitButton() {
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
+    spaceBetween: 20,
+    breakpoints: {
+        599: {
+        }
+    },
 
     // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
-
 });
+
+function swiperEnableDisable(mediaQuery) {
+    if (mediaQuery.matches) {
+      swiper.enable();
+    } else {
+        swiper.disable();
+    }
+  }
+  
+  var mediaQuery = window.matchMedia("(max-width: 599px)");
+  swiperEnableDisable(mediaQuery);
+  mediaQuery.addListener(swiperEnableDisable);
