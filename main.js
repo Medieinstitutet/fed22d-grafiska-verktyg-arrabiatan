@@ -142,7 +142,7 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-function swiperEnableDisable(x) {
+function swiperEnableDisable(mediaQuery) {
     if (mediaQuery.matches) {
       swiper.enable();
     } else {
