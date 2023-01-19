@@ -1,11 +1,5 @@
 @media only screen and (min-width: 992px) {
-  body {
-    margin: auto;
-    width: 1260px;
-  }
-
-
-  /********************************HEADER****************************/
+   /********************************HEADER****************************/
 
   header {
     .svg-logo {
@@ -53,7 +47,7 @@
 
   .first-section {
     max-width: 1260px;
-    margin-bottom: 100px;
+    max-height: 90vh;
 
     p {
       max-width: 40%;
@@ -74,6 +68,7 @@
 .second-section p {
   padding: 0 10vw !important;
 }
+
 .second-section h2 {
   text-align: center !important;
 }
@@ -93,10 +88,17 @@
 .quote-section {
   display: block;
 }
+/******************************QUOTE-SECTION***************************/
+.quote-section{
+  max-width: 1260px !important;
+  margin: auto;
+}
   /***********************FLAMINGO*******************************/
 
   .flamingoSection {
     height: 100vh;
+    background-image: url("../assets/images/flamingo.svg"), url("../assets/images/blue_wave.png"), linear-gradient(0deg, rgba(0,183,170,1) 82%, rgba(255,255,255,1) 82%);
+    background-position: unset;
   }
 
   .flamingo {
