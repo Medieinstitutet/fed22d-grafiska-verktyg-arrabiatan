@@ -42,7 +42,7 @@ function hamburgerMenu() {
         gsap.to(spanHamThree, { y: -20, rotate: -50, duration: 1 });
         checkState = false;
         menu.classList.add('menu-open');
-        gsap.fromTo(menu, { y: -500, duration: 2 }, { y: 0, duration: 2 });
+        gsap.fromTo(menu, { y: -1500, duration: 2 }, { y: 0, duration: 2 });
 
     } else if (checkState === false) {
         gsap.to(spanHamTwo, { backgroundColor: '#F59C30', border: '1px solid black', duration: 2 });
