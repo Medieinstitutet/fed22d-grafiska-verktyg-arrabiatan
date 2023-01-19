@@ -207,7 +207,11 @@ div.menu-open {
 }
 
 /**************************SECOND-SECTION**********************************/
-
+@media only screen and (max-width: 600px) {
+  
+  .card-boxes{
+    display: none;
+  }
 .second-section {
   position: relative;
   max-width: 430px;
@@ -281,7 +285,7 @@ div.menu-open {
     }
   }
 }
-
+}
 .quote-review {
   text-align: center;
   display: grid;

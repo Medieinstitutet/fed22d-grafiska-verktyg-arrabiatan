@@ -66,6 +66,31 @@
       bottom: 330px;
     }
   }
+/**************************SECOND-SECTION**********************************/
+.second-section{
+  margin-bottom: 50px;
+}
+
+.second-section h2, .second-section p {
+  padding: 0 15vw;
+}
+
+.second-section h2 {
+  text-align: center;
+}
+
+.all-cards-container{
+display:grid !important;
+grid-template-columns: repeat(4,1fr) !important;
+  grid-gap:3rem !important;
+  
+}
+.all-cards-container, .card-container:hover{
+  transform: scale(1.1);
+}
+.card-container{
+  transition: transform 0.5s;
+}
 
   /***********************FLAMINGO*******************************/
 
@@ -89,7 +114,6 @@
     }
     button {
       height: 34px;
-      margin-left: 70px;
     }
   
 
