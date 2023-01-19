@@ -149,7 +149,7 @@ function swiperEnableDisable(mediaQuery) {
         swiper.disable();
     }
   }
-
+  
   var mediaQuery = window.matchMedia("(max-width: 599px)");
   swiperEnableDisable(mediaQuery);
   mediaQuery.addListener(swiperEnableDisable);
