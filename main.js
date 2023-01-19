@@ -140,6 +140,16 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-
-
 });
+
+function swiperEnableDisable(x) {
+    if (mediaQuery.matches) {
+      swiper.enable();
+    } else {
+        swiper.disable();
+    }
+  }
+
+  var mediaQuery = window.matchMedia("(max-width: 599px)");
+  swiperEnableDisable(mediaQuery);
+  mediaQuery.addListener(swiperEnableDisable);
