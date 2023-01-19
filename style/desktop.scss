@@ -67,6 +67,28 @@
     }
   }
 /******************************SECOND-SECTION***************************/
+.second-section{
+  max-width: 1260px !important;
+}
+
+.second-section p {
+  padding: 0 10vw !important;
+}
+.second-section h2 {
+  text-align: center !important;
+}
+
+.swiper-wrapper{
+  display:grid !important;
+  grid-template-columns: repeat(4,1fr) !important;
+    grid-gap:3rem !important;
+  }
+  .swiper-wrapper .swiper-slide:hover{
+    transform: scale(1.1);
+  }
+  .swiper-slide{
+    transition: transform 0.5s;
+  }
 
 .quote-section {
   display: block;
@@ -93,7 +115,6 @@
     }
     button {
       height: 34px;
-      margin-left: 70px;
     }
   
 

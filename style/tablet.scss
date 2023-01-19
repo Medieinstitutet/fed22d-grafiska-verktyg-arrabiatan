@@ -34,10 +34,35 @@
   }
 
   /******************************SECOND-SECTION***************************/
+  .swiper-slide-duplicate-prev, .swiper-slide-duplicate-active{
+    display: none !important;
+  }
 
+  .swiper-slide, element.style{
+    margin: 0px !important;
+  }
+ 
+
+  .swiper-wrapper, element.style{
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  
+.swiper-wrapper{
+  display:grid !important;
+  grid-template-columns: repeat(2,2fr) !important;
+    grid-gap:1rem !important;
+    justify-content: center !important;
+    
+
+}
   .swiper {
     overflow: visible !important;
   }
+  .second-section .card-carousel .swiper{
+    height: 100%;
+  }
+  
 
    /*****************COOKIE-DISCLAMER*****************************/
 .cookie-disclamer{
