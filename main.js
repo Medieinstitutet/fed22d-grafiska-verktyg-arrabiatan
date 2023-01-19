@@ -72,6 +72,17 @@ btnHam.addEventListener('click', hamburgerMenu);
 acceptBtn.addEventListener('click', cookieDisclamer);
 
 
+/**********************************************************************************
+**************************************SECOND-PAGE TEXT****************************************
+**********************************************************************************/
+
+const mediaQueryText = window.matchMedia('(min-width: 600px)')
+const text = document.querySelector('.second-section-text')
+if (mediaQueryText.matches){
+    text.innerHTML=`Lorem ipsum dolor sit a urna. Integer eros metus, faucibus non vulputate quis, lobortis ut lectus. Aliquam suscipit iaculis pellentesque. Curabitur sed consequat.`
+} else{
+    text.innerHTML=`Lorem ipsum dolor sit a urna. Integer eros metus, faucibus non vulputate quis, lobortis ut lectus.`
+}
 
 
 /**********************************************************************************
