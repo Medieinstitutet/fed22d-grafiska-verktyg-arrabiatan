@@ -129,6 +129,11 @@ function activateSubmitButton() {
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
+    spaceBetween: 20,
+    breakpoints: {
+        599: {
+        }
+    },
 
     // Navigation arrows
     navigation: {
