@@ -56,7 +56,7 @@ function hamburgerMenu() {
 /**
  * Function to close cookie disclamer when accepted
  */
-function cookieDisclamer(){
+function cookieDisclamer() {
     disclamerContainer.classList.add('accepted-cookies');
 
 }
@@ -90,11 +90,18 @@ Submit.setAttribute("disabled", "");
 Name.addEventListener("change", checkName);
 let checkNameInput = false;
 function checkName() {
+    const errorMessage = document.getElementById("errorName");
     const exp = new RegExp("^[A-Za-zÅÄÖåäö-]{1,}");
     if (exp.test(Name.value)) {
         checkNameInput = true;
+        errorMessage.innerHTML = "";
+        document.getElementById("name").style.backgroundColor = "#FBFAFA";
+        document.getElementById("name").style.border = "none";
     }
     else {
+        errorMessage.innerHTML = "Fill in this field!";
+        document.getElementById("name").style.backgroundColor = "#FCB89F";
+        document.getElementById("name").style.border = "solid #F24100";
         checkNameInput = false;
     }
     activateSubmitButton();
@@ -105,9 +112,17 @@ let checkEmailInput = false;
 
 function checkEmail() {
     const exp = new RegExp("^[A-Za-z0-9_!#$%&'*+/=?`{|}~^.-]+@[A-Za-z0-9.-]+$");
+    const errorMessage = document.getElementById("errorEmail");
     if (exp.test(Email.value)) {
         checkEmailInput = true;
+        errorMessage.innerHTML = "";
+        document.getElementById("email").style.backgroundColor = "#FBFAFA";
+        document.getElementById("email").style.border = "none";
     } else {
+        errorMessage.innerHTML = "Fill in this field!";
+        document.getElementById("email").style.backgroundColor = "#FCB89F";
+        document.getElementById("email").style.border = "solid #F24100";
+
         checkEmailInput = false;
     }
     activateSubmitButton();
@@ -121,7 +136,7 @@ function activateSubmitButton() {
     }
 
 }
-/*************************************************/ 
+/*************************************************/
 /**********************************************************************************
 **************************************SWIPER-CAROUSEL****************************************
 **********************************************************************************/
@@ -129,12 +144,27 @@ function activateSubmitButton() {
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
+    spaceBetween: 20,
+    breakpoints: {
+        599: {
+        }
+    },
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-
-
 });
+
+function swiperEnableDisable(mediaQuery) {
+    if (mediaQuery.matches) {
+      swiper.enable();
+    } else {
+        swiper.disable();
+    }
+  }
+  
+  var mediaQuery = window.matchMedia("(max-width: 599px)");
+  swiperEnableDisable(mediaQuery);
+  mediaQuery.addListener(swiperEnableDisable);

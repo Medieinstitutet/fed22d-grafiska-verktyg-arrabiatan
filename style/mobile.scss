@@ -211,73 +211,102 @@ div.menu-open {
 .second-section {
   position: relative;
   max-width: 430px;
-  height: 700px;
   margin: 0 auto;
+  margin-bottom: 40px;
 
   h2, p {
     padding: 0 50px;
   }
   
   .card-carousel {
-    position: absolute;
-    margin: 0 100px;
-    background-color: $primary_orange;
-    outline: 1px solid #000000;
-    border-radius: 20px;
-    width: 200px;
-    align-items: center;
-    justify-content: space-around;
+    position: relative;
+    margin: 0 auto;
     margin-top: 40px;
-    z-index: 1;
-
-    .swiper-button-prev,
-    .swiper-button-next {
-      --swiper-theme-color: black;
-      --swiper-navigation-size: 75px;
-      font-size: 5rem;
-    }
-
-    .swiper-button-prev {
-      left: -75px;
-    }
-
-    .swiper-button-next {
-      right: -75px;
-    }
-
-    .swiper {
-      width: 200px;
-      height: 350px;
-      border: 1px red;
-    }
-
-    .pictures{
-      width: 200px;
-      height: 243px;
-      outline: 1px solid black;
-    }
 
     button {
       border: none;
       background-color: transparent;
       padding: 0;
       cursor: pointer;
-  }
-
-    h3 {
-      font-size: 1.6rem;
-      text-align: center;
-      margin: 10px;
+      z-index: 0;
     }
 
-    a {
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 28px;
-      font-family: 'Roboto';
-      font-style: normal;
-      color: #000000;
-      margin: 0 50px;
+    .swiper-button-prev,
+    .swiper-button-next {
+      --swiper-theme-color: black;
+      --swiper-navigation-size: 75px;
+      font-size: 5rem;
+      z-index: 2;
+    }
+
+    .swiper-button-prev {
+      left: 20px;
+    }
+
+    .swiper-button-next {
+      right: 20px;
+    }
+
+    .swiper {
+      width: 243px;
+      height: 360px;
+      padding: 2px;
+
+      .swiper-slide {
+        background-color: $primary_orange;
+        outline: 1px solid #000000;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        
+        img {
+          width: 243px;
+          height: 243px;
+          object-fit: cover;
+          outline: 1px solid black;
+        }
+    
+        h3 {
+          flex-basis: 60px;
+          font-size: 2rem;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        button {
+          flex-basis: 60px;
+
+          a {
+            font-size: 1.8rem;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 10px;
+              left: 70px;
+              width: 29px;
+              height: 1.5px;
+              background-color: #000000;
+              transition: width 0.3s ease-in-out;
+            }
+  
+            &:hover{
+              &::after {
+                width: 100px;
+              }
+            }
+          }
+        }
+    
+        
+      }
     }
   }
 }
@@ -306,6 +335,10 @@ div.menu-open {
   .fa-quote-left {
     color: #57B8AA;
     font-size: 70px;
+  }
+
+  .quote-section{
+      display: none;
   }
 
 
@@ -378,6 +411,10 @@ div.menu-open {
 
 form {
   text-align: center;
+}
+
+.flamingoInputText, .flamingoInputEmail{
+  text-indent: 20px;
 }
 
 /********************************FOOTER****************************/
