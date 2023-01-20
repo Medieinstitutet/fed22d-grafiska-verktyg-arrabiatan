@@ -88,51 +88,51 @@ if (mediaQueryText.matches){
 /**********************************************************************************
 **************************************FLAMINGO****************************************
 **********************************************************************************/
-const Name = document.getElementById("name");
-const Email = document.getElementById("email");
-const Submit = document.getElementById("submit");
-Submit.setAttribute("disabled", "");
+const NameInputFlamingo = document.getElementById("input-name-flamingo");
+const EmailInputFlamingo = document.getElementById("input-email-flamingo");
+const SubmitButtonFlamingo = document.getElementById("submit-button-flamingo");
+SubmitButtonFlamingo.setAttribute("disabled", "");
 /**
  * Function to enable submit-button
  * Regex to vertify name and email
  * When both functions variable are 'true', submit function will be enable  
  */
 
-Name.addEventListener("change", checkName);
+NameInputFlamingo.addEventListener("change", checkName);
 let checkNameInput = false;
 function checkName() {
-    const errorMessage = document.getElementById("errorName");
+    const errorMessage = document.getElementById("error-name-flamingo-input");
     const exp = new RegExp("^[A-Za-zÅÄÖåäö-]{1,}");
-    if (exp.test(Name.value)) {
+    if (exp.test(NameInputFlamingo.value)) {
         checkNameInput = true;
         errorMessage.innerHTML = "";
-        document.getElementById("name").style.backgroundColor = "#FBFAFA";
-        document.getElementById("name").style.border = "none";
+        document.getElementById("input-name-flamingo").style.backgroundColor = "#FBFAFA";
+        document.getElementById("input-name-flamingo").style.border = "none";
     }
     else {
         errorMessage.innerHTML = "Fill in this field!";
-        document.getElementById("name").style.backgroundColor = "#FCB89F";
-        document.getElementById("name").style.border = "solid #F24100";
+        document.getElementById("input-name-flamingo").style.backgroundColor = "#FCB89F";
+        document.getElementById("input-name-flamingo").style.border = "solid #F24100";
         checkNameInput = false;
     }
     activateSubmitButton();
 }
 
-Email.addEventListener("change", checkEmail);
+EmailInputFlamingo.addEventListener("change", checkEmail);
 let checkEmailInput = false;
 
 function checkEmail() {
     const exp = new RegExp("^[A-Za-z0-9_!#$%&'*+/=?`{|}~^.-]+@[A-Za-z0-9.-]+$");
-    const errorMessage = document.getElementById("errorEmail");
-    if (exp.test(Email.value)) {
+    const errorMessage = document.getElementById("error-email-flamingo-input");
+    if (exp.test(EmailInputFlamingo.value)) {
         checkEmailInput = true;
         errorMessage.innerHTML = "";
-        document.getElementById("email").style.backgroundColor = "#FBFAFA";
-        document.getElementById("email").style.border = "none";
+        document.getElementById("input-email-flamingo").style.backgroundColor = "#FBFAFA";
+        document.getElementById("input-email-flamingo").style.border = "none";
     } else {
         errorMessage.innerHTML = "Fill in this field!";
-        document.getElementById("email").style.backgroundColor = "#FCB89F";
-        document.getElementById("email").style.border = "solid #F24100";
+        document.getElementById("input-email-flamingo").style.backgroundColor = "#FCB89F";
+        document.getElementById("input-email-flamingo").style.border = "solid #F24100";
 
         checkEmailInput = false;
     }
@@ -141,9 +141,9 @@ function checkEmail() {
 
 function activateSubmitButton() {
     if (checkNameInput && checkEmailInput) {
-        Submit.removeAttribute("disabled");
+        SubmitButtonFlamingo.removeAttribute("disabled");
     } else {
-        Submit.setAttribute("disabled", "");
+        SubmitButtonFlamingo.setAttribute("disabled", "");
     }
 
 }
