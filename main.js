@@ -155,7 +155,7 @@ function activateSubmitButton() {
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
-    spaceBetween: 20,
+    spaceBetween: 40,
     breakpoints: {
         599: {
         }

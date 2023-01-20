@@ -249,7 +249,7 @@ div.menu-open {
     .swiper {
       width: 243px;
       height: 360px;
-      padding: 2px;
+      padding: 15px;
 
       .swiper-slide {
         background-color: $primary_orange;
@@ -257,6 +257,7 @@ div.menu-open {
         border-radius: 20px;
         display: flex;
         flex-direction: column;
+        box-shadow: 0px 5px 10px 3px rgb(11 10 10 / 82%);
         
         img {
           width: 243px;
