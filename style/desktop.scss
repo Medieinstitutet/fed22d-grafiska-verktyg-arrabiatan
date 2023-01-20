@@ -47,7 +47,7 @@
 
   .first-section {
     max-width: 1260px;
-    max-height: 90vh;
+    height: 800px;
 
     p {
       max-width: 40%;
@@ -72,18 +72,6 @@
 .second-section h2 {
   text-align: center !important;
 }
-
-.swiper-wrapper{
-  display:grid !important;
-  grid-template-columns: repeat(4,1fr) !important;
-    grid-gap:3rem !important;
-  }
-  .swiper-wrapper .swiper-slide:hover{
-    transform: scale(1.1);
-  }
-  .swiper-slide{
-    transition: transform 0.5s;
-  }
 
 .quote-section {
   display: block;
@@ -151,4 +139,19 @@
 }
 
 
+}
+
+@media only screen and (min-width: 1100px) {
+  .swiper-wrapper{
+    display: grid !important;
+    grid-template-columns: repeat(4,1fr) !important;
+    grid-gap: 1.5rem;
+    }
+  
+}
+
+@media only screen and (min-width: 1250px) {
+  .swiper-wrapper {
+    grid-gap: 3rem;
+  }
 }
