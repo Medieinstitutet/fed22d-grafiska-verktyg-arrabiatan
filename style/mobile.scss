@@ -345,7 +345,7 @@ div.menu-open {
 
 /**************************FLAMINGO**********************************/
 
-.flamingoSection {
+.flamingo-section {
 
   min-height: 60vh;
   background-image: url("../assets/images/flamingo.svg"), url("../assets/images/blue_wave.png");
@@ -353,9 +353,9 @@ div.menu-open {
   background-size: 100% auto, 110% auto;
   background-position: bottom center, center -1px;
   background-color: #00B7AA;
-}
 
-.flamingoText p {
+
+.flamingo-text p {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -365,7 +365,7 @@ div.menu-open {
   
 }
 
-.flamingoInput {
+.flamingo-input {
   width: 277px;
   height: 44px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -377,12 +377,12 @@ div.menu-open {
   margin-bottom: 20px;
 }
 
-.flamingoInputText:focus,
-.flamingoInputEmail:focus {
+.flamingo-input-text:focus,
+.flamingo-input-email:focus {
   background: #EFDDCE;
 }
 
-.flamingoInputSend {
+.flamingo-input-send {
   background: #F59C30;
   border: 2px solid #000000;
   font-family: 'Inconsolata';
@@ -394,19 +394,19 @@ div.menu-open {
   text-align: center;
 }
 
-.flamingoInputSend:hover {
+.flamingo-input-send:hover {
   background: #57B8AA;
 }
 
-.flamingoInputSend:active {
+.flamingo-input-send:active {
   background: #018B82;
 }
 
-.flamingoInputSend:disabled {
+.flamingo-input-send:disabled {
   background: #ACABA9;
 }
 
-.flamingoText {
+.flamingo-text {
   text-align: center;
 }
 
@@ -414,8 +414,9 @@ form {
   text-align: center;
 }
 
-.flamingoInputText, .flamingoInputEmail{
+.flamingo-input-text, .flamingo-input-email{
   text-indent: 20px;
+}
 }
 
 /********************************FOOTER****************************/
