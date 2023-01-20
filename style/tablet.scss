@@ -60,8 +60,16 @@
   .swiper-wrapper{
     display:grid !important;
     grid-template-columns: repeat(2,2fr) !important;
-    grid-gap:1rem !important;
+    grid-gap: 1rem;
     justify-content: center !important;
+  }
+
+  .swiper-wrapper .swiper-slide:hover{
+    transform: scale(1.1);
+  }
+  
+  .swiper-slide{
+    transition: transform 0.5s;
   }
 
   .swiper {
@@ -102,4 +110,10 @@
   }
   /**************************************************************/
 
+}
+
+@media only screen and (min-width: 730px) {
+  .swiper-wrapper {
+    grid-gap: 3rem;
+  }
 }
