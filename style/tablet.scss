@@ -16,6 +16,7 @@
   .first-section {
     max-width: 550px;
     margin-bottom: 75px;
+    height: 700px;
 
     p {
       max-width: 400px;
@@ -36,6 +37,11 @@
   /******************************SECOND-SECTION***************************/
   .second-section {
     max-width: 550px;
+
+    h2,
+    p {
+      padding: 0;
+    }
   }
 
   .swiper-slide-duplicate-prev, .swiper-slide-duplicate-active{
@@ -45,21 +51,19 @@
   .swiper-slide, element.style{
     margin: 0px !important;
   }
- 
 
   .swiper-wrapper, element.style{
     transform: translate3d(0, 0, 0) !important;
   }
 
   
-.swiper-wrapper{
-  display:grid !important;
-  grid-template-columns: repeat(2,2fr) !important;
+  .swiper-wrapper{
+    display:grid !important;
+    grid-template-columns: repeat(2,2fr) !important;
     grid-gap:1rem !important;
     justify-content: center !important;
-    
+  }
 
-}
   .swiper {
     overflow: visible !important;
   }
