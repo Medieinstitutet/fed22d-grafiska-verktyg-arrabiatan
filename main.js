@@ -4,13 +4,11 @@ import { gsap } from 'gsap';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-
-
 /**********************************************************************************
  ***********************************DECLARE VAIABLES ******************************
  **********************************************************************************/
 
-/************************************HEADER*****************************************/
+// HEADER
 
 const btnHam = document.querySelector('#btnHam');
 const spanHamOne = document.querySelector('#hamSpanOne');
@@ -20,8 +18,38 @@ const menu = document.querySelector('#hamMenu');
 
 let checkState = true;
 
+// SECOND SECTION
 
-/******************************COOKIE DISCLAMER***********************************/
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 40,
+    breakpoints: {
+        599: {
+        }
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+const mediaQuery = window.matchMedia("(max-width: 599px)");
+
+// FLAMINGO
+
+const Name = document.getElementById("name");
+const Email = document.getElementById("email");
+const Submit = document.getElementById("submit");
+Email.addEventListener("change", checkEmail);
+
+let checkNameInput = false;
+let checkEmailInput = false;
+
+// COOKIESTEXT
+
 const acceptBtn = document.querySelector('#accept-btn');
 const disclamerContainer = document.querySelector('#cookie-disclamer');
 
@@ -29,12 +57,9 @@ const disclamerContainer = document.querySelector('#cookie-disclamer');
 **************************************FUNCTIONS************************************
 **********************************************************************************/
 
-/**
- * Function to open-close hemburger btn
- * animation on hamburger to X.
- * animation to slide the open-menu in.
- * And reverse
- */
+// HEADER
+
+// Function to open-close hemburger btn
 function hamburgerMenu() {
     if (checkState) {
         gsap.to(spanHamTwo, { backgroundColor: 'transparent', border: 'none', duration: 2 });
@@ -53,53 +78,20 @@ function hamburgerMenu() {
     }
 }
 
-/**
- * Function to close cookie disclamer when accepted
- */
-function cookieDisclamer() {
-    disclamerContainer.classList.add('accepted-cookies');
+// SECOND-SECTION
 
+// Function to disbale swiper in tablet/desktop
+function swiperEnableDisable(mediaQuery) {
+    if (mediaQuery.matches) {
+        swiper.enable();
+    } else {
+        swiper.disable();
+    }
 }
 
+// FLAMINGO
 
-
-/**********************************************************************************
-**************************************LOGIC****************************************
-**********************************************************************************/
-
-btnHam.addEventListener('click', hamburgerMenu);
-
-acceptBtn.addEventListener('click', cookieDisclamer);
-
-
-/**********************************************************************************
-**************************************SECOND-PAGE TEXT****************************************
-**********************************************************************************/
-
-const mediaQueryText = window.matchMedia('(min-width: 600px)')
-const text = document.querySelector('.second-section-text')
-if (mediaQueryText.matches){
-    text.innerHTML=`Lorem ipsum dolor sit a urna. Integer eros metus, faucibus non vulputate quis, lobortis ut lectus. Aliquam suscipit iaculis pellentesque. Curabitur sed consequat.`
-} else{
-    text.innerHTML=`Lorem ipsum dolor sit a urna. Integer eros metus, faucibus non vulputate quis, lobortis ut lectus.`
-}
-
-
-/**********************************************************************************
-**************************************FLAMINGO****************************************
-**********************************************************************************/
-const Name = document.getElementById("name");
-const Email = document.getElementById("email");
-const Submit = document.getElementById("submit");
-Submit.setAttribute("disabled", "");
-/**
- * Function to enable submit-button
- * Regex to vertify name and email
- * When both functions variable are 'true', submit function will be enable  
- */
-
-Name.addEventListener("change", checkName);
-let checkNameInput = false;
+// Validate name input
 function checkName() {
     const errorMessage = document.getElementById("errorName");
     const exp = new RegExp("^[A-Za-zÅÄÖåäö-]{1,}");
@@ -118,9 +110,7 @@ function checkName() {
     activateSubmitButton();
 }
 
-Email.addEventListener("change", checkEmail);
-let checkEmailInput = false;
-
+// Validate email input
 function checkEmail() {
     const exp = new RegExp("^[A-Za-z0-9_!#$%&'*+/=?`{|}~^.-]+@[A-Za-z0-9.-]+$");
     const errorMessage = document.getElementById("errorEmail");
@@ -139,6 +129,7 @@ function checkEmail() {
     activateSubmitButton();
 }
 
+// Activate submit button when validated
 function activateSubmitButton() {
     if (checkNameInput && checkEmailInput) {
         Submit.removeAttribute("disabled");
@@ -147,35 +138,29 @@ function activateSubmitButton() {
     }
 
 }
-/*************************************************/
+
+// COOKIESTEXT
+
+// Function to close cookie disclamer when accepted
+function cookieDisclamer() {
+    disclamerContainer.classList.add('accepted-cookies');
+
+}
+
 /**********************************************************************************
-**************************************SWIPER-CAROUSEL****************************************
+**************************************LOGIC****************************************
 **********************************************************************************/
 
-const swiper = new Swiper('.swiper', {
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween: 40,
-    breakpoints: {
-        599: {
-        }
-    },
+//HEADER
+btnHam.addEventListener('click', hamburgerMenu);
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
+// SECOND-SECTION
+swiperEnableDisable(mediaQuery);
+mediaQuery.addListener(swiperEnableDisable);
 
-function swiperEnableDisable(mediaQuery) {
-    if (mediaQuery.matches) {
-      swiper.enable();
-    } else {
-        swiper.disable();
-    }
-  }
-  
-  var mediaQuery = window.matchMedia("(max-width: 599px)");
-  swiperEnableDisable(mediaQuery);
-  mediaQuery.addListener(swiperEnableDisable);
+// FLAMINGO
+Submit.setAttribute("disabled", "");
+Name.addEventListener("change", checkName);
+
+// COOKIESTEXT
+acceptBtn.addEventListener('click', cookieDisclamer);

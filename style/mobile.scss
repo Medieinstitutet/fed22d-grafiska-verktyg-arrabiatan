@@ -312,13 +312,12 @@ div.menu-open {
   }
 }
 
+/**************************QUOTES**********************************/
+
 .quote-review {
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px; 
-  margin-left: 2rem;
+  display: flex;
+  margin: 0 2rem;
   margin-bottom: 5rem;
   font-size: 32px;
   } 
@@ -341,7 +340,6 @@ div.menu-open {
   .quote-section{
       display: none;
   }
-
 
 /**************************FLAMINGO**********************************/
 
