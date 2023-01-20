@@ -1,0 +1,119 @@
+@media only screen and (min-width: 600px) {
+
+  /********************************HEADER****************************/
+  .svg-logo{
+      margin-top:30px;
+      margin-left: 30px;
+    }
+
+    .btn-ham{
+      margin-right: 150px;
+      margin-top: 30px;
+    }
+
+  /******************************FIRST-SECTION***************************/
+
+  .first-section {
+    max-width: 550px;
+    margin-bottom: 75px;
+    height: 700px;
+
+    p {
+      max-width: 400px;
+    }
+
+    a {
+      max-width: 350px;
+    }
+
+    .stig-helmer-img {
+      width: 447px;
+      height: 410px;
+      right: -250px;
+      bottom: 100px;
+    }
+  }
+
+  /******************************SECOND-SECTION***************************/
+  .second-section {
+    max-width: 550px;
+
+    h2,
+    p {
+      padding: 0;
+    }
+  }
+
+  .swiper-slide-duplicate-prev, .swiper-slide-duplicate-active{
+    display: none !important;
+  }
+
+  .swiper-slide, element.style{
+    margin: 0 !important;
+  }
+
+  .swiper-wrapper, element.style{
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  
+  .swiper-wrapper{
+    display:grid !important;
+    grid-template-columns: repeat(2,2fr) !important;
+    grid-gap: 1rem;
+    justify-content: center !important;
+  }
+
+  .swiper-wrapper .swiper-slide:hover{
+    transform: scale(1.1);
+  }
+  
+  .swiper-slide{
+    transition: transform 0.5s;
+  }
+
+  .swiper {
+    overflow: visible !important;
+  }
+  .second-section .card-carousel .swiper{
+    height: 100%;
+  }
+  
+
+   /*****************COOKIE-DISCLAMER*****************************/
+.cookie-disclamer{
+  flex-direction: row;
+  height: 70px;
+  div:nth-of-type(1){
+      width: 70%;
+  }
+  div:nth-of-type(2){
+      width: 30%;
+  }
+
+  p{
+    font-family: 'Roboto', 'sans serif';
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: left;
+    margin-right: 0px;
+  }
+
+  button{
+      width: 175px;
+      height: 40px;
+      margin-left:30px;
+      margin-top: 15px;
+      font-size: 1rem;
+  }
+  }
+  /**************************************************************/
+
+}
+
+@media only screen and (min-width: 730px) {
+  .swiper-wrapper {
+    grid-gap: 3rem;
+  }
+}
