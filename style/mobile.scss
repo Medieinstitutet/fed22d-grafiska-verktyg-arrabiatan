@@ -163,6 +163,7 @@ div.menu-open {
 .first-section {
   position: relative;
   max-width: 430px;
+  height: 700px;
   padding: 0 50px;
   margin: 0 auto;
 
@@ -531,3 +532,8 @@ section.accepted-cookies{
 }
 /**************************************************************/
 
+@media only screen and (min-width: 458px) {
+  .first-section {
+    height: 650px;
+  }
+}
